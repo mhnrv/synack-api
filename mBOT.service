@@ -1,0 +1,16 @@
+[Unit]
+Description=mBOT service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /path/to/start.sh
+Restart=always
+RestartSec=10s
+#User=ubuntu
+Environment=PYTHONUNBUFFERED=1
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.targets
