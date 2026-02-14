@@ -1,5 +1,6 @@
 # synack-api
 
+fork of [https://github.com/bamhm182/SynackAPI] but with duo support out of the box
 
 ## Installation
 
